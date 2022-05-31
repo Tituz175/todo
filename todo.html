@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="todo.css">
+    <title>Todo List</title>
+</head>
+
+<body>
+
+    <div id="todo" class="w-full md:w-3/4 lg:w-2/4 mx-auto text-center">
+
+        <header class="text-center text-white my-2 md:my-4">
+            <h1 class="mb-4 mt-10 text-2xl md:text-4xl lg:text-6xl font-semibold">Todo List</h1>
+            <form class="search">
+                <input class="w-11/12 md:w-2/3 mx-auto outline-none py-2 pl-2 md:text-xl rounded-md" type="text"
+                    name="search" placeholder="search todos" />
+            </form>
+        </header>
+
+        <ul class="w-11/12 md:w-2/3 todos mx-auto text-white">
+            <li class="flex justify-between items-center my-0.5 px-6 py-4 text-xl font-semibold rounded-sm">
+                <span>play mariokart</span>
+                <span class="delete">🗑️</span>
+            </li>
+            <li class="flex justify-between items-center my-0.5 px-6 py-4 text-xl font-semibold rounded-sm">
+                <span>defeat ganon in zelda</span>
+                <span class="delete">🗑️</span>
+            </li>
+            <li class="flex justify-between items-center my-0.5 px-6 py-4 text-xl font-semibold rounded-sm">
+                <span>make a veggie pie</span>
+                <span class="delete">🗑️</span>
+            </li>
+        </ul>
+
+        <form class="add text-center my-4">
+            <label class="text-white md:text-xl md:font-semibold">Add a new todo...</label>
+            <input class="block w-11/12 md:w-2/3 mx-auto outline-none py-2 pl-2 md:text-xl rounded-md mt-4" type="text"
+                name="add" />
+        </form>
+
+    </div>
+
+
+    <script src="todo.js"></script>
+</body>
+
+</html>
