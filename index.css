@@ -18,26 +18,15 @@ input[type="text"]:focus {
 .todos:hover{
   overflow-y: auto;
 }
-/* width */
-/* ::-webkit-scrollbar {
-  width: 20px;
-} */
-
-/* Track */
-/* ::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey;
-  border-radius: 10px;
-  margin-left: 0.5rem;
-} */
-
-/* Handle */
-/* ::-webkit-scrollbar-thumb {
-  background: red;
-  border-radius: 10px;
-} */
 .todos li {
   background: #423a6f;
 }
 .delete {
   cursor: pointer;
+}
+
+@media screen and (max-width: 1023px) {
+  .todos{
+    overflow-y: auto;
+  }
 }
